@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flower DOM</title>
+    <!-- tailwind and daisy ui css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
+
 <body>
-    
+    <header class="mt-24">
+        <h1 class="text-5xl font-semibold text-center">All Flower Cards
+        </h1>
+    </header>
+    <main>
+        <div class="grid grid-cols-4">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/roses-bloom_53876-89175.avif" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Black Flower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, culpa.</p>
+                    <p>Price: 50 $</p>
+                    <button onclick="eventClick(event)" class="btn btn-primary w-[100px]">Buy Now</button>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/purple-osteospermum-daisy-flower_1373-16.avif" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Pink Flower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nihil!</p>
+                    <p>Price: 50 $</p>
+                    <button onclick="eventClick(event)" class="btn btn-primary w-[100px]">Buy Now</button>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/closeup-shot-yellow-gaillardia-flower_181624-43107.avif" alt="Shoes"
+                        class="rounded-xl" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Yellow Flower</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, assumenda.</p>
+                    <p>Price: 50 $</p>
+                    <button onclick="eventClick(event)" class="btn btn-primary w-[100px]">Buy Now</button>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl mt-12">
+                <div class="text-center text-md">
+                    <p class="mb-4">Code: Hero</p>
+                    <div id="append-div">
+
+                    </div>
+                    <p class="mb-4">Total: 00</p>
+                    <p class="mb-8">Discount: 00</p>
+                    <p>Grand Total: 00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/flower.js"></script>
 </body>
+
 </html>
